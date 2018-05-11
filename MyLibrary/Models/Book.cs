@@ -12,7 +12,9 @@ namespace MyLibrary.Models
     {
         [Key]
         public int BookId { get; set; }
+        [Required, MaxLength(100, ErrorMessage ="Title must be less than 100 characters")]
         public string Title { get; set; }
+        [Required, MaxLength(100, ErrorMessage = "Author must be less than 100 characters")]
         public string Author { get; set; }
         public string Genre { get; set; }
         public string Format { get; set; }
