@@ -1,12 +1,14 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿
+/* BASIC STYLES*/
+body {
+    padding: 0;
+    margin: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +24,19 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* NAVBAR STYLES */
+
+.navbar {
+    font-size: 1.2em;
+}
+
+/* HOME - INDEX PAGE STYLES */
+.jumbotron {
+    background-image: url("../Assets/bookcase.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
