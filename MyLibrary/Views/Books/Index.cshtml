@@ -24,7 +24,7 @@
             @Html.DisplayNameFor(model => model.Format)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PublishedOn)
+            @Html.DisplayNameFor(model => model.YearPublished)
         </th>
         <th></th>
     </tr>
@@ -44,7 +44,7 @@
             @Html.DisplayFor(modelItem => item.Format)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PublishedOn)
+            @Html.DisplayFor(modelItem => item.YearPublished)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.BookId }) |

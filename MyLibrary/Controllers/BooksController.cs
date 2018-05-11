@@ -46,7 +46,7 @@ namespace MyLibrary.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BookId,Title,Author,Genre,Format,PublishedOn")] Book book)
+        public ActionResult Create([Bind(Include = "BookId,Title,Author,Genre,Format,YearPublished")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace MyLibrary.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BookId,Title,Author,Genre,Format,PublishedOn")] Book book)
+        public ActionResult Edit([Bind(Include = "BookId,Title,Author,Genre,Format,YearPublished")] Book book)
         {
             if (ModelState.IsValid)
             {
