@@ -165,19 +165,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LibraryDbContext.cs" />
-    <Compile Include="Migrations\201805120342389_initial.cs" />
-    <Compile Include="Migrations\201805120342389_initial.Designer.cs">
-      <DependentUpon>201805120342389_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201805161701045_Initial.cs" />
+    <Compile Include="Migrations\201805161701045_Initial.Designer.cs">
+      <DependentUpon>201805161701045_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\MyLibrary.LibraryDbContext.mdf" />
-    <Content Include="App_Data\MyLibrary.LibraryDbContext_log.ldf">
-      <DependentUpon>MyLibrary.LibraryDbContext.mdf</DependentUpon>
-    </Content>
     <Content Include="Assets\bookcase.jpg" />
     <Content Include="Assets\library.jpg" />
     <Content Include="Content\bootstrap-lumen.css" />
@@ -231,7 +227,9 @@
     <Content Include="Views\Authors\Edit.cshtml" />
     <Content Include="Views\Authors\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
@@ -246,8 +244,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805120342389_initial.resx">
-      <DependentUpon>201805120342389_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805161701045_Initial.resx">
+      <DependentUpon>201805161701045_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -26,7 +26,9 @@
         <th>
             @Html.DisplayNameFor(model => model.YearPublished)
         </th>
-        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -47,9 +49,12 @@
             @Html.DisplayFor(modelItem => item.YearPublished)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BookId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BookId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BookId })
+            @Html.DisplayFor(modelItem => item.ISBN)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.BookId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.BookId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.BookId })
         </td>
     </tr>
 }
